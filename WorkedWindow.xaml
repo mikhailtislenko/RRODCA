@@ -1,0 +1,87 @@
+﻿<Window x:Class="RRODCA.WorkedWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RRODCA"
+        mc:Ignorable="d"
+        Title="WorkedWindow"  MinHeight="600" MinWidth="1000">
+    <Grid>
+
+        <Button  Margin="0,0,50,20" Height="80" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="150" FontFamily="Times New Roman" FontSize="16" Grid.ColumnSpan="2" IsEnabled="False">
+            <TextBlock TextWrapping="Wrap" HorizontalAlignment="Center">Send the data to the rescue rangers</TextBlock>
+        </Button>
+        <TextBox Margin="30,200,468,246" Text="TextBox" TextWrapping="Wrap" MinWidth="400" MinHeight="100" FontFamily="Times New Roman" FontSize="16"/>
+        <Button Content="Finalize operation" Margin="0,0,220,20" Height="45" VerticalAlignment="Bottom" FontFamily="Times New Roman" FontSize="16" HorizontalAlignment="Right" Width="145"/>
+        <Button Content="Cancel operation" Margin="250,0,0,16" Height="44" VerticalAlignment="Bottom" FontFamily="Times New Roman" FontSize="16" HorizontalAlignment="Left" Width="145"/>
+        <TextBox HorizontalAlignment="Left" Height="30" Margin="30,84,0,0" Text="KUI number" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontFamily="Times New Roman" FontSize="16"/>
+        <ComboBox HorizontalAlignment="Left" Height="30" Margin="30,29,0,0"  VerticalAlignment="Top" Width="200" FontFamily="Times New Roman" FontSize="16">
+            <ComboBoxItem Content="Written off in the NC"/>
+            <ComboBoxItem Content="transferred to the PS"/>
+            <ComboBoxItem Content="transferred to the PD"/>
+        </ComboBox>
+        <Label Content="Resolution:" HorizontalAlignment="Left" Height="27" Margin="30,2,0,0" VerticalAlignment="Top" Width="200" FontFamily="Times New Roman" FontSize="16"/>
+        <Label Content="KUI number:" HorizontalAlignment="Left" Height="27" Margin="30,59,0,0" VerticalAlignment="Top" Width="200" FontFamily="Times New Roman" FontSize="16"/>
+        <TextBox HorizontalAlignment="Left" Height="30" Margin="295,27,0,0" Text="Name" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontFamily="Times New Roman" FontSize="16"/>
+        <Label Content="Witness:" HorizontalAlignment="Left" Height="27" Margin="295,2,0,0" VerticalAlignment="Top" Width="200" FontFamily="Times New Roman" FontSize="16"/>
+        <TextBox HorizontalAlignment="Left" Height="30" Margin="295,84,0,0" Text="Phone number" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontFamily="Times New Roman" FontSize="16"/>
+        <Label Content="Witness phone number :" HorizontalAlignment="Left" Height="27" Margin="295,59,0,0" VerticalAlignment="Top" Width="200" FontFamily="Times New Roman" FontSize="16"/>
+        <ComboBox HorizontalAlignment="Left" Height="30" Margin="30,155,0,0"  VerticalAlignment="Top" Width="200" FontFamily="Times New Roman" FontSize="16">
+            <ComboBoxItem Content="ASR"/>
+            <ComboBoxItem Content="PSR"/>
+            <ComboBoxItem Content="VPR"/>
+            <ComboBoxItem Content="DTP"/>
+            <ComboBoxItem Content="Workaday"/>
+            <ComboBoxItem Content="Other work"/>
+            <ComboBoxItem Content="Mountain PSR"/>
+        </ComboBox>
+        <Label Content="Work character:" HorizontalAlignment="Left" Height="27" Margin="30,128,0,0" VerticalAlignment="Top" Width="200" FontFamily="Times New Roman" FontSize="16"/>
+        <ComboBox HorizontalAlignment="Left" Height="30" Margin="30,0,0,179"  VerticalAlignment="Bottom" Width="200" FontFamily="Times New Roman" FontSize="16">
+            <ComboBoxItem Content="Pavlodar"/>
+            <ComboBoxItem Content="Ekibastuz"/>
+            <ComboBoxItem Content="AKSU"/>
+            <ComboBoxItem Content="Other"/>
+        </ComboBox>
+        <Label Content="Worked team:" HorizontalAlignment="Left" Margin="250,0,0,209" Width="200" FontFamily="Times New Roman" FontSize="16" Height="28" VerticalAlignment="Bottom"/>
+        <ComboBox HorizontalAlignment="Left" Margin="250,0,0,179" Width="200" FontFamily="Times New Roman" FontSize="16" Height="30" VerticalAlignment="Bottom">
+            <ComboBoxItem Content="OSO CZ"/>
+            <ComboBoxItem Content="OSO CSS"/>
+            <ComboBoxItem Content="OSO DLFN"/>
+            <ComboBoxItem Content="OSO AKSU"/>
+            <ComboBoxItem Content="OSO EKBZ"/>
+        </ComboBox>
+        <Label Content="Town:" HorizontalAlignment="Left" Height="28" Margin="30,0,0,214" VerticalAlignment="Bottom" Width="200" FontFamily="Times New Roman" FontSize="16"/>
+        <TextBox Margin="30,0,0,20" Text="TextBox" TextWrapping="Wrap" MinWidth="200" MinHeight="150" FontFamily="Times New Roman" FontSize="16" Width="200" Height="150" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
+        <TextBox HorizontalAlignment="Left" Margin="252,155,0,0" Text="time 1" TextWrapping="Wrap" Width="52" FontFamily="Times New Roman" FontSize="16" Height="30" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="309,155,0,0" Text="time 2" TextWrapping="Wrap" Width="52" FontFamily="Times New Roman" FontSize="16" Height="30" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="366,155,0,0" Text="time 3" TextWrapping="Wrap" Width="52" FontFamily="Times New Roman" FontSize="16" Height="30" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="423,155,0,0" Text="time 4" TextWrapping="Wrap" Width="52" FontFamily="Times New Roman" FontSize="16" Height="30" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="480,155,0,0" Text="time 5" TextWrapping="Wrap" Width="52" FontFamily="Times New Roman" FontSize="16" Height="30" VerticalAlignment="Top"/>
+        <Label Content="Time:" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="250,128,0,0" Width="280" FontFamily="Times New Roman" FontSize="16" Height="28" VerticalAlignment="Top" />
+        <Label Content="operated:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Height="26" Margin="589,-1,0,0" VerticalAlignment="Top" Width="98" FontFamily="Times New Roman" FontSize="16">
+
+        </Label>
+
+        <TextBox HorizontalAlignment="Left" Height="30" Margin="685,27,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Width="30" FontFamily="Times New Roman" FontSize="16"/>
+        <Label Content="Rangers:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Height="30" Margin="530,27,0,0" VerticalAlignment="Top" Width="150" FontFamily="Times New Roman" FontSize="16"/>
+        <TextBox HorizontalAlignment="Left" Height="30" Margin="685,67,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Width="30" FontFamily="Times New Roman" FontSize="16"/>
+        <Label Content="Mashinery:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Height="30" Margin="530,67,0,0" VerticalAlignment="Top" Width="150" FontFamily="Times New Roman" FontSize="16"/>
+        <TextBox HorizontalAlignment="Left" Height="30" Margin="685,109,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Width="30" FontFamily="Times New Roman" FontSize="16"/>
+        <Label Content="Sp.mashinery:"  HorizontalContentAlignment="Right" HorizontalAlignment="Left" Height="30" Margin="530,109,0,0" VerticalAlignment="Top" Width="150" FontFamily="Times New Roman" FontSize="16"/>
+        <TextBox HorizontalAlignment="Left" Height="30" Margin="685,153,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Width="30" FontFamily="Times New Roman" FontSize="16"/>
+        <Label Content="Boats:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Height="30" Margin="530,153,0,0" VerticalAlignment="Top" Width="150" FontFamily="Times New Roman" FontSize="16"/>
+        <TextBox Height="30" Margin="0,29,65,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="16" HorizontalAlignment="Right" Width="30"/>
+        <Label Content="Saved people :" HorizontalContentAlignment="Right" Height="30" Margin="0,29,95,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="16" HorizontalAlignment="Right" Width="150"/>
+        <TextBox HorizontalAlignment="Right" Height="30" Margin="0,69,65,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Width="30" FontFamily="Times New Roman" FontSize="16"/>
+        <Label Content="Saved children :" HorizontalContentAlignment="Right" Height="30" Margin="0,69,95,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="16" HorizontalAlignment="Right" Width="150"/>
+        <TextBox Height="30" Margin="0,110,65,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="16" HorizontalAlignment="Right" Width="30"/>
+        <Label Content="Evacuated people :" HorizontalContentAlignment="Right" Height="30" Margin="0,110,95,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="16" HorizontalAlignment="Right" Width="150"/>
+        <TextBox HorizontalAlignment="Right" Height="30" Margin="0,150,65,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Width="30" FontFamily="Times New Roman" FontSize="16"/>
+        <Label Content="Evacuated children :" HorizontalContentAlignment="Right" HorizontalAlignment="Right" Height="30" Margin="0,150,95,0" VerticalAlignment="Top" Width="150" FontFamily="Times New Roman" FontSize="16"/>
+        <TextBox HorizontalAlignment="Right" Height="30" Margin="0,197,65,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Width="30" FontFamily="Times New Roman" FontSize="16"/>
+        <Label Content="Body dead people :" HorizontalContentAlignment="Right" HorizontalAlignment="Right" Height="30" Margin="0,197,95,0" VerticalAlignment="Top" Width="150" FontFamily="Times New Roman" FontSize="16"/>
+        <TextBox HorizontalAlignment="Right" Height="30" Margin="0,237,65,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Width="30" FontFamily="Times New Roman" FontSize="16"/>
+        <Label Content="Body dead children :" HorizontalContentAlignment="Right" HorizontalAlignment="Right" Height="30" Margin="0,237,95,0" VerticalAlignment="Top" Width="150" FontFamily="Times New Roman" FontSize="16"/>
+
+    </Grid>
+</Window>
