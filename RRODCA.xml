@@ -1,0 +1,498 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RRODCA</name>
+    </assembly>
+    <members>
+        <member name="T:RRODCA.App">
+            <summary>
+            Interaction logic for App.xaml
+            </summary>
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="M:RRODCA.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:RRODCA.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+        <member name="T:RRODCA.ChoiceTeamToday">
+            <summary>
+            Класс для выбора спасателей из предложенного списка
+            </summary>
+            <summary>
+            ChoiceTeamToday
+            </summary>
+        </member>
+        <member name="P:RRODCA.ChoiceTeamToday.Rangers">
+            <summary>
+            Список спасателей для передачи родителю
+            </summary>
+        </member>
+        <member name="F:RRODCA.ChoiceTeamToday.RangersCount">
+            <summary>
+            Количество записей в массиве объектов для передачи родителю
+            </summary>
+        </member>
+        <member name="M:RRODCA.ChoiceTeamToday.#ctor">
+            <summary>
+            Коструктор класса
+            </summary>
+        </member>
+        <member name="M:RRODCA.ChoiceTeamToday.#ctor(System.String)">
+            <summary>
+             перегруженный коструктор
+            </summary>
+        </member>
+        <member name="M:RRODCA.ChoiceTeamToday.ContentListbox(System.String)">
+            <summary>
+            Наполняет листбокс из базы
+            </summary>
+        </member>
+        <member name="E:RRODCA.ChoiceTeamToday.ButtonClicked">
+            <summary>
+            событие оповещения о том, что список спасателей готов и можно забирать
+            </summary>
+        </member>
+        <member name="M:RRODCA.ChoiceTeamToday.DoneChangeShift_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Кнопка "Сохранить"
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:RRODCA.ChoiceTeamToday.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:RRODCA.ChoiceWindow">
+            <summary>
+            Логика взаимодействия для ChoiceWindow.xaml
+            </summary>
+            <summary>
+            ChoiceWindow
+            </summary>
+        </member>
+        <member name="M:RRODCA.ChoiceWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:RRODCA.ConnectionManager">
+            <summary>
+            Класс предоставляет статические методы для обращения к базе данных
+            </summary>
+        </member>
+        <member name="F:RRODCA.ConnectionManager.connectString">
+            <summary>
+             строка подключения хранится в файле конфигурации
+            </summary>
+        </member>
+        <member name="M:RRODCA.ConnectionManager.RequestToBase(System.String)">
+            <summary>
+             Метод осуществляет запрос к базе данных 
+            </summary>
+            <param name="sqlExpression">SQL строка запроса к базе</param>
+            <returns>количество затронутых строк тип int32</returns>
+        </member>
+        <member name="M:RRODCA.ConnectionManager.RequestToBase(System.String,System.Collections.Generic.List{System.Data.SqlClient.SqlParameter})">
+            <summary>
+            
+             Перегрузка. Метод осуществляет запрос к базе данных. Предназначен для записи в базу.
+            </summary>
+            <param name="sqlExpression">SQL строка запроса к базе</param>
+            <param name="Parameters">список параметров для записи в базу</param>
+            <returns>Количество затронутых запросом строк в int 32 </returns>
+        </member>
+        <member name="M:RRODCA.ConnectionManager.ReadFromBase(System.String,System.Int32)">
+            <summary>
+            
+             Метод осуществляет запрос к базе данных
+            </summary>
+            <param name="sqlExpression">SQL строка запроса к базе</param>
+            <param name="count">задаёт размерность массива выделяемого под данные</param>
+            <returns>двумерный массив строк из базы данных</returns>
+        </member>
+        <member name="M:RRODCA.ConnectionManager.CountInBase(System.String)">
+            <summary>
+            Метод осуществляет запрос к базе данных, и возвращает количество объектов соответствующих запросу
+            </summary>
+            <param name="sqlExpression">SQL строка запроса к базе</param>
+            <returns></returns>
+        </member>
+        <member name="T:RRODCA.DutyRangers">
+            <summary>
+            Вся смена отряда.
+            </summary>
+        </member>
+        <member name="M:RRODCA.DutyRangers.#ctor">
+            <summary>
+            Конструктора с перегрузками.
+            Не помню зачем перегрузки, но помню что нужны. 
+            </summary>
+        </member>
+        <member name="M:RRODCA.DutyRangers.#ctor(RRODCA.DutyRangers)">
+            <summary>
+            Конструктора с перегрузками.
+            Не помню зачем перегрузки, но помню что нужны. 
+            </summary>
+        </member>
+        <member name="M:RRODCA.DutyRangers.#ctor(RRODCA.Subdivision,System.String)">
+            <summary>
+            Конструктора с перегрузками.
+            Не помню зачем перегрузки, но помню что нужны. 
+            </summary>
+        </member>
+        <member name="P:RRODCA.DutyRangers.Shift">
+            <summary>
+            Номер смены. От первой до четвертой
+            </summary>
+        </member>
+        <member name="P:RRODCA.DutyRangers.Manager">
+            <summary>
+            Дежурный диспетчер.
+            </summary>
+        </member>
+        <member name="P:RRODCA.DutyRangers.SeniorOfficer">
+            <summary>
+            Ответственный по отряду
+            </summary>
+        </member>
+        <member name="F:RRODCA.DutyRangers.OSOCZ">
+            <summary>
+            Хромзавод
+            </summary>
+        </member>
+        <member name="F:RRODCA.DutyRangers.OSOCSS">
+            <summary>
+            ЦСС
+            </summary>
+        </member>
+        <member name="F:RRODCA.DutyRangers.OSODLFN">
+            <summary>
+            Дельфин
+            </summary>
+        </member>
+        <member name="F:RRODCA.DutyRangers.OSOAKSU">
+            <summary>
+            Аксу
+            </summary>
+        </member>
+        <member name="F:RRODCA.DutyRangers.OSOEKBZ">
+            <summary>
+            Экибас
+            </summary>
+        </member>
+        <member name="F:RRODCA.DutyRangers.OSOReserve">
+            <summary>
+            Резерв
+            </summary>
+        </member>
+        <member name="T:RRODCA.DutySubdivisionWindow">
+            <summary>
+            Логика взаимодействия для DutySubdivisionWindow.xaml
+            </summary>
+            <summary>
+            DutySubdivisionWindow
+            </summary>
+        </member>
+        <member name="F:RRODCA.DutySubdivisionWindow.teamToday">
+            <summary>
+            Объект класса отбора личного состава, еще и техники
+            </summary>
+        </member>
+        <member name="F:RRODCA.DutySubdivisionWindow.subdivision">
+            <summary>
+            Дежурные спасатели и дежурная техника одного отделения
+            </summary>
+        </member>
+        <member name="P:RRODCA.DutySubdivisionWindow.Rangers">
+            <summary>
+            промежуточный массив данных из объекта выбора личного состава. и техники
+            </summary>
+        </member>
+        <member name="F:RRODCA.DutySubdivisionWindow.RangersCount">
+            <summary>
+            Количество строк в массиве элементов
+            </summary>
+        </member>
+        <member name="M:RRODCA.DutySubdivisionWindow.#ctor">
+            <summary>
+            Конструктор
+            </summary>
+        </member>
+        <member name="M:RRODCA.DutySubdivisionWindow.Senior_Ranger_Choice(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Выбирает старшего смены, заносит его в класс хранения и в лайбу
+            </summary>
+        </member>
+        <member name="M:RRODCA.DutySubdivisionWindow.Rangers_Choice(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Выбирает выбирает команду спасателей
+            </summary>
+        </member>
+        <member name="M:RRODCA.DutySubdivisionWindow.Duty_Wenicle_Choice(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            дежурная машина
+            </summary>
+        </member>
+        <member name="M:RRODCA.DutySubdivisionWindow.Wenicle_Choice(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            дежурная техника
+            </summary>
+        </member>
+        <member name="M:RRODCA.DutySubdivisionWindow.ChkNlRng">
+            <summary>
+            проверка на налл
+            </summary>
+        </member>
+        <member name="M:RRODCA.DutySubdivisionWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:RRODCA.IConnector.RequestToBase(System.String)">
+            <summary>
+            
+             Метод осуществляет запрос к базе данных.
+            </summary>
+            <param name="sqlExpression">SQL строка запроса к базе</param>
+            <returns>Количество затронутых запросом строк в int 32 </returns>
+        </member>
+        <member name="M:RRODCA.IConnector.RequestToBase(System.String,System.Collections.Generic.List{System.Data.SqlClient.SqlParameter})">
+            <summary>
+            
+             Перегрузка. Метод осуществляет запрос к базе данных.
+            </summary>
+            <param name="sqlExpression">SQL строка запроса к базе</param>
+            <param name="Parameters">список параметров для записи в базу</param>
+            <returns>Количество затронутых запросом строк в int 32 </returns>
+        </member>
+        <member name="M:RRODCA.IConnector.ReadFromBase(System.String,System.Int32)">
+            <summary>
+            
+             Метод осуществляет запрос к базе данных.
+            </summary>
+            <param name="sqlExpression">SQL строка запроса к базе</param>
+            <param name="count">задаёт размерность массива выделяемого под данные</param>
+            <returns>возвращает двумерный массив строк из базы данных</returns>
+        </member>
+        <member name="M:RRODCA.IConnector.CountInBase(System.String)">
+            <summary>
+            Метод осуществляет запрос к базе данных
+            </summary>
+            <param name="sqlExpression">SQL строка запроса к базе</param>
+            <returns>возвращает количество объектов соответствующих запросу</returns>
+        </member>
+        <member name="T:RRODCA.MainWindow">
+            <summary>
+            Interaction logic for MainWindow.xaml
+            </summary>
+            <summary>
+            MainWindow
+            </summary>
+        </member>
+        <member name="M:RRODCA.MainWindow.#ctor">
+            <summary>
+            Коструктор класса
+            </summary>
+        </member>
+        <member name="M:RRODCA.MainWindow.InitForm">
+            <summary>
+            Проверяет  есль ли данные о сегодняшней смене в базе, ругается если нет.
+            </summary>
+        </member>
+        <member name="M:RRODCA.MainWindow.NewShiftToday(System.Object,System.EventArgs)">
+            <summary>
+            Метод заполняет смену собранными данными 
+            </summary>
+        </member>
+        <member name="M:RRODCA.MainWindow.SaveDutyRangersInBase(RRODCA.DutyRangers)">
+            <summary>
+             Метод сохраняет класс DutyRangers, в котором записана вся дежурная смена отряда, в базу данных
+            </summary>
+            <param name="dutyRangers">объект класса DutyRangers</param>
+        </member>
+        <member name="M:RRODCA.MainWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:RRODCA.NewShiftWindow">
+            <summary>
+            Логика взаимодействия для NewShiftWindow.xaml
+            </summary>
+            <summary>
+            NewShiftWindow
+            </summary>
+        </member>
+        <member name="P:RRODCA.NewShiftWindow.Rangers">
+            <summary>
+            промежуточный массив данных из объекта выбора личного состава
+            </summary>
+        </member>
+        <member name="F:RRODCA.NewShiftWindow.teamToday">
+            <summary>
+            Объект класса отбора личного состава
+            </summary>
+        </member>
+        <member name="M:RRODCA.NewShiftWindow.#ctor">
+            <summary>
+            Конструктор класса
+            </summary>
+        </member>
+        <member name="M:RRODCA.NewShiftWindow.Shift_MouseDoubleClick(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            по двойному клику скрывается и активирует комбобокс
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:RRODCA.NewShiftWindow.ShiftComboBox_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            после выбора значения, копирует его в скрытый лейбл, активирует его и скрывает себя
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:RRODCA.NewShiftWindow.DutySubdivion">
+            <summary>
+            создаёт объект класса   DutySubdivisionWindow, подписывается на событие кнопки внутри него
+            </summary>
+        </member>
+        <member name="E:RRODCA.NewShiftWindow.ShiftDone">
+            <summary>
+            объявляем событие "состав смены заполнен"
+            </summary>
+        </member>
+        <member name="M:RRODCA.NewShiftWindow.ButtonSaveNewShift_Click_1(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            проверяем состав смены на налл и создаем событие "состав смены заполнен"
+            </summary>
+        </member>
+        <member name="M:RRODCA.NewShiftWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:RRODCA.Properties.Resources">
+            <summary>
+              Класс ресурса со строгой типизацией для поиска локализованных строк и т.д.
+            </summary>
+        </member>
+        <member name="P:RRODCA.Properties.Resources.ResourceManager">
+            <summary>
+              Возвращает кэшированный экземпляр ResourceManager, использованный этим классом.
+            </summary>
+        </member>
+        <member name="P:RRODCA.Properties.Resources.Culture">
+            <summary>
+              Перезаписывает свойство CurrentUICulture текущего потока для всех
+              обращений к ресурсу с помощью этого класса ресурса со строгой типизацией.
+            </summary>
+        </member>
+        <member name="T:RRODCA.Resource.en">
+            <summary>
+              Класс ресурса со строгой типизацией для поиска локализованных строк и т.д.
+            </summary>
+        </member>
+        <member name="P:RRODCA.Resource.en.ResourceManager">
+            <summary>
+              Возвращает кэшированный экземпляр ResourceManager, использованный этим классом.
+            </summary>
+        </member>
+        <member name="P:RRODCA.Resource.en.Culture">
+            <summary>
+              Перезаписывает свойство CurrentUICulture текущего потока для всех
+              обращений к ресурсу с помощью этого класса ресурса со строгой типизацией.
+            </summary>
+        </member>
+        <member name="T:RRODCA.Resource.kz">
+            <summary>
+              Класс ресурса со строгой типизацией для поиска локализованных строк и т.д.
+            </summary>
+        </member>
+        <member name="P:RRODCA.Resource.kz.ResourceManager">
+            <summary>
+              Возвращает кэшированный экземпляр ResourceManager, использованный этим классом.
+            </summary>
+        </member>
+        <member name="P:RRODCA.Resource.kz.Culture">
+            <summary>
+              Перезаписывает свойство CurrentUICulture текущего потока для всех
+              обращений к ресурсу с помощью этого класса ресурса со строгой типизацией.
+            </summary>
+        </member>
+        <member name="T:RRODCA.Resource.ru">
+            <summary>
+              Класс ресурса со строгой типизацией для поиска локализованных строк и т.д.
+            </summary>
+        </member>
+        <member name="P:RRODCA.Resource.ru.ResourceManager">
+            <summary>
+              Возвращает кэшированный экземпляр ResourceManager, использованный этим классом.
+            </summary>
+        </member>
+        <member name="P:RRODCA.Resource.ru.Culture">
+            <summary>
+              Перезаписывает свойство CurrentUICulture текущего потока для всех
+              обращений к ресурсу с помощью этого класса ресурса со строгой типизацией.
+            </summary>
+        </member>
+        <member name="T:RRODCA.Subdivision">
+            <summary>
+            Класс хранит данные о дежурной смене одного подразделения
+            </summary>
+        </member>
+        <member name="P:RRODCA.Subdivision.SeniorRanger">
+            <summary>
+            Старший смены
+            </summary>
+        </member>
+        <member name="P:RRODCA.Subdivision.DutyWenicle">
+            <summary>
+            Дежурная автомашина
+            </summary>
+        </member>
+        <member name="P:RRODCA.Subdivision.RangersTeam">
+            <summary>
+            Смена, вместе со старшим. Старший на нулевой позиции
+            </summary>
+        </member>
+        <member name="P:RRODCA.Subdivision.Mashinery">
+            <summary>
+            Техника в распоряжении смены
+            </summary>
+        </member>
+        <member name="P:RRODCA.Subdivision.SpecialMashinery">
+            <summary>
+            Специальная техника в распоряжении смены
+            </summary>
+        </member>
+        <member name="P:RRODCA.Subdivision.Boats">
+            <summary>
+            Плавсредства в распоряжении смены
+            </summary>
+        </member>
+        <member name="T:RRODCA.WorkedWindow">
+            <summary>
+            Логика взаимодействия для WorkedWindow.xaml
+            </summary>
+            <summary>
+            WorkedWindow
+            </summary>
+        </member>
+        <member name="M:RRODCA.WorkedWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,20 @@
+﻿<Window x:Class="RRODCA.ChoiceTeamToday"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RRODCA"
+        mc:Ignorable="d"
+        Title="ChoiceTeamToday" Height="450" Width="800" MinWidth="800 " MinHeight="450">
+    <Grid>
+
+
+        <ListBox Name ="listbox" MinHeight="200" MinWidth="350"   Margin="10,10,0,27" HorizontalAlignment="Left" FontFamily="Times New Roman" MouseDoubleClick="Listbox_MouseDoubleClick" FontSize="14" >
+            
+        </ListBox>
+
+        <ListBox Name ="listboxTeam"  MinHeight="200" MinWidth="300"  Margin="0,10,10,128" HorizontalAlignment="Right" Width="358"  FontFamily="Times New Roman" FontSize="14"/>
+        <Button x:Name="DoneChangeShift" Content="Done" Margin="0,0,10,27" FontFamily="Times New Roman" FontSize="16" Click="DoneChangeShift_Click" HorizontalAlignment="Right" Width="358" Height="57" VerticalAlignment="Bottom"/>
+
+    </Grid>
+</Window>

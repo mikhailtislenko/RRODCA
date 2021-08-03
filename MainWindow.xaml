@@ -1,0 +1,76 @@
+﻿<Window x:Class="RRODCA.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RRODCA"
+        mc:Ignorable="d"
+        Title="RRODCA" Height="450" Width="800" MinWidth="800 " MinHeight="450" Closing="Window_Closing">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="793*"/>
+            <ColumnDefinition Width="7*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Menu Grid.ColumnSpan="2">
+            <Separator></Separator>
+            <MenuItem FontFamily="Times New Roman" Header="Shift" FontSize="16">
+                <MenuItem x:Name="menuItemNewShiftRangers" FontFamily="Times New Roman" FontSize="16" Header="New shift rangers" Click="MenuItemNewShiftRangers_Click"/>
+                <MenuItem x:Name="menuItemNewShift" FontFamily="Times New Roman" FontSize="16" Header="New shift" Click="MenuItemNewShift_Click"/>
+                <MenuItem x:Name="menuItemDutySubdivision" FontFamily="Times New Roman" FontSize="16" Header="Duty Subdivision" Click="MenuItemDutySubdivision_Click"/>
+                <MenuItem x:Name="menuItemExit" FontFamily="Times New Roman" FontSize="16" Header="Exit"  Click="MenuItemExit_Click" />
+            </MenuItem>
+            <Separator></Separator>
+            <MenuItem FontFamily="Times New Roman" FontSize="16" Header="Reports">
+                <MenuItem FontFamily="Times New Roman" FontSize="16" Header="Report 1"/>
+                <MenuItem FontFamily="Times New Roman" FontSize="16" Header="Report 2"/>
+            </MenuItem>
+            <Separator></Separator>
+            <MenuItem FontFamily="Times New Roman" FontSize="16" Header="Help">
+                <MenuItem FontFamily="Times New Roman" FontSize="16" Header="Help"/>
+                <MenuItem FontFamily="Times New Roman" FontSize="16" Header="About"/>
+            </MenuItem>
+        </Menu>
+        <ListBox Margin="10,20,356,117" Grid.Row="1"  MinWidth="400" MinHeight="250" RenderTransformOrigin="0.5,0.5">
+            <ListBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="0.161"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="0.561"/>
+                </TransformGroup>
+            </ListBox.RenderTransform>
+        </ListBox>
+        <Label Content="Total operation today:" HorizontalAlignment="Right" Margin="0,21,115,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="16" Grid.Row="1"/>
+        <Label Content="no data" HorizontalAlignment="Right" Margin="0,21,61,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="16" Grid.Row="1"/>
+        <Button x:Name="buttonNewOperatin" Content="New operation" Margin="0,0,43,20" Grid.Row="1" Height="50" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="150" FontFamily="Times New Roman" FontSize="16" Click="ButtonNewOperatin_Click"/>
+
+        <Button Content="Create reports" Margin="30,0,0,20" Grid.Row="1" Height="50" VerticalAlignment="Bottom" FontFamily="Times New Roman" FontSize="16" HorizontalAlignment="Left" Width="150"/>
+        <Label Content="Shift:" HorizontalAlignment="Left" Margin="246,0,0,72" VerticalAlignment="Bottom" FontFamily="Times New Roman" FontSize="16" Grid.Row="1"/>
+        <Label Content="No data" HorizontalAlignment="Left" Margin="295,0,0,72" FontFamily="Times New Roman" FontSize="16" Grid.Row="1" Height="29" VerticalAlignment="Bottom"/>
+        <Label Content="Manager:" HorizontalAlignment="Left" Margin="224,0,0,44" VerticalAlignment="Bottom" FontFamily="Times New Roman" FontSize="16" Grid.Row="1"/>
+        <Label Content="No data" HorizontalAlignment="Left" Margin="295,0,0,43" VerticalAlignment="Bottom" FontFamily="Times New Roman" FontSize="16" Grid.Row="1"/>
+        <Label Content="Senior officer:" Margin="192,0,0,14" FontFamily="Times New Roman" FontSize="16" Grid.Row="1" HorizontalAlignment="Left" Width="103" Height="29" VerticalAlignment="Bottom"/>
+        <Label Content="No data" Margin="295,0,0,16" FontFamily="Times New Roman" FontSize="16" Grid.Row="1" Height="29" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="60"/>
+        <Label Content="Opened operation today:" HorizontalAlignment="Right" Margin="0,50,115,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="16" Grid.Row="1"/>
+        <Label Content="no data" HorizontalAlignment="Right" Margin="0,50,61,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="16" Grid.Row="1"/>
+        <Label Content="Cros over operation today:" HorizontalAlignment="Right" Margin="0,79,115,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="16" Grid.Row="1"/>
+        <Label Content="no data" HorizontalAlignment="Right" Margin="0,79,61,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="16" Grid.Row="1"/>
+        <Label Content="Canseled operation today:" HorizontalAlignment="Right" Margin="0,108,115,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="16" Grid.Row="1"/>
+        <Label Content="no data" HorizontalAlignment="Right" Margin="0,108,61,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="16" Grid.Row="1"/>
+        <ListBox Margin="0,174,29,117" Grid.Row="1"  MinWidth="50" MinHeight="50" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Right" Width="269">
+            <ListBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="0.161"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="0.561"/>
+                </TransformGroup>
+            </ListBox.RenderTransform>
+        </ListBox>
+
+    </Grid>
+</Window>

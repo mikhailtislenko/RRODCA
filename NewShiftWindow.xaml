@@ -1,0 +1,39 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RRODCA"
+        xmlns:System="clr-namespace:System;assembly=System.Runtime" x:Class="RRODCA.NewShiftWindow"
+        mc:Ignorable="d"
+        Title="NewShiftWindow"  ResizeMode="NoResize" Height="450" Width="800" >
+    <Grid>
+        <Button x:Name="buttonSaveNewShift" Content="Save" HorizontalAlignment="Center" Margin="0,364,0,10" Width="178" FontFamily="Times New Roman" FontSize="16" Click="ButtonSaveNewShift_Click_1"/>
+        <Label Content="Shift:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="28,19,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="20" Width="150"/>
+        <Label Content="Manager:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="28,52,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="20" Width="150"/>
+        <Label Content="Senior officer:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="28,85,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="20" Width="150"/>
+        <ComboBox x:Name="shiftComboBox" Visibility="Hidden" Margin="183,21,0,0"  FontFamily="Times New Roman" FontSize="16" Height="26" VerticalAlignment="Top" SelectionChanged="ShiftComboBox_SelectionChanged" HorizontalAlignment="Left" Width="117">
+            <System:String>first shift</System:String>
+            <System:String>second shift</System:String>
+            <System:String>third shift</System:String>
+            <System:String>fourth shift</System:String>
+        </ComboBox>
+        <Label x:Name="shift"  Content="no data"  HorizontalContentAlignment="Left" HorizontalAlignment="Left" Margin="183,19,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="20" Width="150" MouseDoubleClick="Shift_MouseDoubleClick"/>
+        <Label x:Name="manager" Content="no data"  HorizontalContentAlignment="Left" HorizontalAlignment="Left" Margin="183,52,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="20" Width="407" MouseDoubleClick="Manager_MouseDoubleClick"/>
+        <Label x:Name="seniorOfficer" Content="no data"  HorizontalContentAlignment="Left" HorizontalAlignment="Left" Margin="183,85,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="20" Width="407" MouseDoubleClick="SeniorOfficer_MouseDoubleClick"/>
+        <Label Content="OSO CZ:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="28,151,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="20" Width="150"/>
+        <Label Content="OSO CSS:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="28,184,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="20" Width="150"/>
+        <Label Content="OSO DLFN:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="28,217,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="20" Width="150"/>
+        <Label x:Name="OSO_CZ" Content="no data"  HorizontalContentAlignment="Left" HorizontalAlignment="Left" Margin="183,151,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="20" Width="203" MouseDoubleClick="OSO_CZ_MouseDoubleClick"/>
+        <Label x:Name="OSO_CSS" Content="no data"  HorizontalContentAlignment="Left" HorizontalAlignment="Left" Margin="183,184,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="20" Width="203" MouseDoubleClick="OSO_CSS_MouseDoubleClick"/>
+        <Label x:Name="OSO_DLFN" Content="no data"  HorizontalContentAlignment="Left" HorizontalAlignment="Left" Margin="183,217,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="20" Width="203" MouseDoubleClick="OSO_DLFN_MouseDoubleClick"/>
+        <Label Content="OSO AKSU:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="28,250,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="20" Width="150"/>
+        <Label Content="OSO EKBZ:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="28,283,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="20" Width="150"/>
+        <Label Content="OSO Reserve:" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Margin="28,316,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="20" Width="150"/>
+        <Label x:Name="OSO_AKSU" Content="no data"  HorizontalContentAlignment="Left" HorizontalAlignment="Left" Margin="183,250,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="20" Width="203" MouseDoubleClick="OSO_AKSU_MouseDoubleClick"/>
+        <Label x:Name="OSO_EKBZ" Content="no data"  HorizontalContentAlignment="Left" HorizontalAlignment="Left" Margin="183,283,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="20" Width="203" MouseDoubleClick="OSO_EKBZ_MouseDoubleClick"/>
+        <Label x:Name="OSO_Reserve" Content="no data"  HorizontalContentAlignment="Left" HorizontalAlignment="Left" Margin="183,316,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="20" Width="203" MouseDoubleClick="OSO_Reserve_MouseDoubleClick"/>
+
+
+    </Grid>
+</Window>
