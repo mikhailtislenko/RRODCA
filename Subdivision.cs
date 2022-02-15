@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace RRODCA
-{   
+﻿namespace RRODCA
+{
     /// <summary>
     /// Класс хранит данные о дежурной смене одного подразделения
     /// </summary>
@@ -14,7 +8,7 @@ namespace RRODCA
         /// <summary>
         /// Старший смены
         /// </summary>
-        public string SeniorRanger { get; set; }
+        public string SeniorRanger { get; set; } 
         /// <summary>
         /// Дежурная автомашина
         /// </summary>

@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace RRODCA
+﻿namespace RRODCA
 {   /// <summary>
-/// Вся смена отряда.
-/// </summary>
-   internal class DutyRangers
+    /// Вся смена отряда.
+    /// </summary>
+    internal class DutyRangers
     {
 
         /// <summary>

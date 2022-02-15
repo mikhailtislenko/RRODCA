@@ -1,16 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace RRODCA
 {
@@ -185,7 +176,6 @@ namespace RRODCA
         {
             if (dutyRangers.Shift != null && dutyRangers.Manager != null && dutyRangers.SeniorOfficer != null && dutyRangers.OSOCZ !=null && dutyRangers.OSOCSS != null && dutyRangers.OSODLFN != null && dutyRangers.OSOAKSU != null && dutyRangers.OSOEKBZ != null && dutyRangers.OSOReserve != null)
             {
-                ShiftDone?.Invoke(this, EventArgs.Empty);   // создаем событие "состав смены заполнен"
                 Close();
             }
             else

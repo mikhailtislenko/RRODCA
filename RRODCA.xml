@@ -108,17 +108,13 @@
              Перегрузка. Метод осуществляет запрос к базе данных. Предназначен для записи в базу.
             </summary>
             <param name="sqlExpression">SQL строка запроса к базе</param>
-            <param name="Parameters">список параметров для записи в базу</param>
-            <returns>Количество затронутых запросом строк в int 32 </returns>
         </member>
         <member name="M:RRODCA.ConnectionManager.ReadFromBase(System.String,System.Int32)">
             <summary>
             
-             Метод осуществляет запрос к базе данных
             </summary>
             <param name="sqlExpression">SQL строка запроса к базе</param>
             <param name="count">задаёт размерность массива выделяемого под данные</param>
-            <returns>двумерный массив строк из базы данных</returns>
         </member>
         <member name="M:RRODCA.ConnectionManager.CountInBase(System.String)">
             <summary>
@@ -313,12 +309,6 @@
             <summary>
             Метод заполняет смену собранными данными 
             </summary>
-        </member>
-        <member name="M:RRODCA.MainWindow.SaveDutyRangersInBase(RRODCA.DutyRangers)">
-            <summary>
-             Метод сохраняет класс DutyRangers, в котором записана вся дежурная смена отряда, в базу данных
-            </summary>
-            <param name="dutyRangers">объект класса DutyRangers</param>
         </member>
         <member name="M:RRODCA.MainWindow.InitializeComponent">
             <summary>
